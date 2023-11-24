@@ -1,0 +1,168 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    title: "Product 1",
+    price: 20,
+    description:"Concentrado etapa 1 para perro cachorro con nutricion completa.",
+    category:"Concentrado",
+    image:"https://www.mimascota.com.gt/495-large_default/dog-chow-cachorros-razas-pequenas.jpg"
+  },
+  {
+    _id: 2,
+    title: "Product 2",
+    price: 50,
+    description:"Concentrado etapa 2 para perro adulto con nutricion completa.",
+    category:"Concentrado",
+    image:"https://tse1.mm.bing.net/th?id=OIP.CqFjnfwVzi5M3zkszib5PgHaHa&pid=Api&P=0&h=180"
+  },
+  {
+    _id: 3,
+    title: "Product 3",
+    price: 50,
+    description:"Concentrado etapa 3 para perro senior con nutricion completa.",
+    category:"Concentrado",
+    image:"https://tse1.mm.bing.net/th?id=OIP.JoLGI2iLJVd3PiUQjJTInwAAAA&pid=Api&P=0&h=180"
+  },
+  {
+    _id: 4,
+    title: "Product 4",
+    price: 20,
+    description:"Galletas para perros sabor a pollo.",
+    category:"Galletas",
+    image:"https://plazavea.vteximg.com.br/arquivos/ids/2175497-1000-1000/20234604.jpg?v=637629467797000000"
+  },
+  {
+    _id: 5,
+    title: "Product 5",
+    price: 10,
+    description:"Snack, hueso desestresante para perros.",
+    category:"Snacks para perros",
+    image:"https://m.media-amazon.com/images/I/518dA9lA32L.jpg"
+  },
+  {
+    _id: 6,
+    title: "Product 6",
+    price: 30,
+    description:"Concentrado para gatos etapa 1 gatitos.",
+    category:"Concentrado para gatitos",
+    image:"https://tse2.mm.bing.net/th?id=OIP.HDY-D2Um7F_0jOjJhzkkjwHaJT&pid=Api&P=0&h=180"
+  },
+  {
+    _id: 7,
+    title: "Product 7",
+    price: 40,
+    description:"Concentrado para gatos etapa 2 gatos adultos.",
+    category:"Concentrado para gatos",
+    image:"https://d2r9epyceweg5n.cloudfront.net/stores/001/049/402/products/chunky-gatos-economico1-81d9d93029be8fe37515922423432211-1024-1024.jpg"
+  },
+  {
+    _id: 8,
+    title: "Product 8",
+    price: 50,
+    description:"Concentrado para gatos etapa 3 gatos mayores.",
+    category:"Concentrado para gatos",
+    image:"https://tse3.mm.bing.net/th?id=OIP.8-pnBqYLKymPK3ikpnEfRgHaMP&pid=Api&P=0&h=180"
+  },
+  {
+    _id: 9,
+    title: "Product 9",
+    price: 12,
+    description:"Snack para gatos sabor a carne.",
+    category:"Snack",
+    image:"https://jumbocolombiafood.vteximg.com.br/arquivos/ids/3402250-750-750/7896029046609.jpg?v=636894688581400000"
+  },
+  {
+    _id: 10,
+    title: "Product 10",
+    price: 12,
+    description:"Snack para gatos sabor a atun.",
+    category:"Snack",
+    image:"https://s.cornershopapp.com/product-images/1058051.jpg?versionId=853hvC6.yVX0QSoAUGDuYkTViTaL_oPW"
+  },
+  {
+    _id: 11,
+    title: "Product 11",
+    price: 12,
+    description:"Snack para gatos sabor a pollo.",
+    category:"Snack",
+    image:"https://wongfood.vteximg.com.br/arquivos/ids/392957-1000-1000/Whiskas-Alimento-H-medo-para-Gatos-Adultos-Sabor-Pollo-Pouch-85-gr-1-183177613.jpg?v=637406372351570000"
+  },
+  {
+    _id: 12,
+    title: "Product 12",
+    price: 12,
+    description:"Snack para gatos sabor a salmon.",
+    category:"Snack",
+    image:"https://zonasul.vtexassets.com/arquivos/ids/3046034/VF4qT-qqCUAAAAAAAAHGoQ.jpg?v=637793158593700000"
+  },
+  {
+    _id: 13,
+    title: "Product 13",
+    price: 35,
+    description:"Camas para el descanso de los felinos.",
+    category:"camas para gatos",
+    image:"https://tejidosacrochetpasoapaso.com/wp-content/uploads/2021/02/camas-para-gatos-a-crochet-facil.jpg"
+  },
+  {
+    _id: 14,
+    title: "Product 14",
+    price: 60,
+    description:"Gimnasio para el entretenimiento y estimulacion de los gatos.",
+    category:"Gimnasio para gatos",
+    image:"https://i.pinimg.com/736x/b8/0c/e0/b80ce0d689df7c9806cb13c1436290cd.jpg"
+  },
+  {
+    _id: 15,
+    title: "Product 15",
+    price: 35,
+    description:"Camas para el descanso de los perros.",
+    category:"Camas para perros",
+    image:"https://http2.mlstatic.com/cama-para-perro-2-pz-desmontable-razas-pequenas-D_NQ_NP_954254-MLM25924666912_082017-F.jpg"
+  },
+  {
+    _id: 16,
+    title: "Product 16",
+    price: 15,
+    description:"Shampoo para limpieza y suavidad de los perros.",
+    category:"Shampoo para perros",
+    image:"https://s.cornershopapp.com/product-images/1135818.jpg?versionId=mh8PScOF0Z38ptqMSwbg1KBwxwfrv7rI"
+  },
+  {
+    _id: 17,
+    title: "Product 17",
+    price: 15,
+    description:"Shampoo para limpieza y suavidad de los gatos.",
+    category:"Shampoo para gatos",
+    image:"https://petnanetbenipet.vteximg.com.br/arquivos/ids/163938-1000-1000/Shampoo_Sanol_Cat_para_Gatos_-_500_mL.jpg?v=637316483856470000"
+  },
+  {
+    _id: 18,
+    title: "Product 18",
+    price: 80,
+    description:"Variedad de accesorios necesarios para mascotas.",
+    category:"Accesorios para mascotas",
+    image:"http://www.dondepuedocomprar.es/wp-content/uploads/2014/05/Depositphotos_26379649_s.jpg"
+  },
+  {
+    _id: 19,
+    title: "Product 19",
+    price: 45,
+    description:"Arena para losm felinos, primordial y muy comoda para los gatos.",
+    category:"Arena para gatos",
+    image:"https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00750179166447L.jpg"
+  },
+  {
+    _id: 20,
+    title: "Product 20",
+    price: 9,
+    description:"Locion refrescante para el cuidado de las mascotas.",
+    category:"Locion para mascotas",
+    image:"https://puppiscolombia.vteximg.com.br/arquivos/ids/159003-1000-1000/locion_machos.jpg?v=637093418256200000"
+  },
+])
