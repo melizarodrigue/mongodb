@@ -1,0 +1,116 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      title: 'Product 1:Comida para perro',
+      price: 3000,
+    }
+  }
+)
+db.products.updateOne(
+    // query
+    {_id: 4},
+    // change => operators
+    {
+      $set: {
+        title: 'Product 4: Galletas snack para perro',
+        price: 3000,
+      }
+    }
+  )
+
+  db.products.updateOne(
+    // query
+    {_id: 5},
+    // change => operators
+    {
+      $set: {
+        title: 'Product 5:Hueso snack para perritos',
+        price: 3000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 6},
+    // change => operators
+    {
+      $set: {
+        title: 'Product 6:Comida para gatos',
+        price: 3000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 12},
+    // change => operators
+    {
+      $set: {
+        title: 'Product 12:snack para gatos sabor a filete',
+        price: 3000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 13},
+    // change => operators
+    {
+      $set: {
+        title: 'Product 13:Camitas para las mascoticas',
+        price: 3000,
+      }
+    }
+  )
+  
+  db.products.updateOne(
+    // query
+    {_id: 16},
+    // change => operators
+    {
+      $set: {
+        title: 'Product 16:Shampoo y limpieza para perros',
+        price: 3000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 17},
+    // change => operators
+    {
+      $set: {
+        title: 'Shampoo y limpieza para gatitos',
+        price: 3000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 19},
+    // change => operators
+    {
+      $set: {
+        title: 'Product 19:Arena para las mascotas',
+        price: 3000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 20},
+    // change => operators
+    {
+      $set: {
+        title: 'Product 20:Locion para perros',
+        price: 3000,
+      }
+    }
+  )
